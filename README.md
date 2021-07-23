@@ -12,7 +12,9 @@ To use, you must bind the function to a keyboard shortcut in RStudio by going to
 The shortcut will work when executed both from a .R file open in the editor or from the RStudio console. Because it wraps the whole line, the shortcut will work on the following lines:
 
 `iris`
+
 `data.table(iris)[, mean(Sepal.Length), by=.(Species)][Species == 'setosa']`
+
 `iris %>% filter(Species == "setosa")`
 
 I find this particularly useful with data.table queries, as they are almost always on one line.
